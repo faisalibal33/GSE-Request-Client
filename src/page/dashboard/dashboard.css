@@ -1,0 +1,154 @@
+.dashboard {
+  display: flex;
+}
+.dashboardContainer {
+  flex: 6;
+}
+.widgets,
+.charts {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+.charts {
+  padding: 5px 20px;
+}
+.swiper {
+  max-width: 50vw;
+}
+.slide {
+  min-width: 50vw;
+}
+
+.tblContainer {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border: 1px solid rgb(214, 214, 214);
+  padding: 20px;
+  margin: 20px;
+}
+.tblTitle {
+  font-weight: 500;
+  color: gray;
+  border-bottom: 1px solid gray;
+  margin-bottom: 15px;
+  padding-bottom: 2px;
+  width: max-content;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+/*modal */
+.modalBackground {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(200, 200, 200) transparent;
+  backdrop-filter: blur(5px);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.modalContainer {
+  position: relative;
+  width: 500px;
+  height: 200px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.modalContainer .title {
+  display: inline-block;
+  text-align: center;
+  color: black;
+}
+
+.modalContainer .searchItem {
+  margin-top: 60px;
+}
+
+.titleCloseBtn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.titleCloseBtn button {
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.modalContainer .body {
+  flex: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+.modalContainer .footer {
+  position: absolute;
+  bottom: 20px;
+  left: 65%;
+}
+
+.modalContainer .footer button {
+  width: 70px;
+  height: 35px;
+  margin: 5px;
+  border: none;
+  background-color: cornflowerblue;
+  color: white;
+  border-radius: 8px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+#cancelBtn {
+  background-color: crimson;
+}
+
+#execute {
+  background-color: rgb(220, 133, 20);
+}
+
+#finish {
+  background-color: rgb(37, 220, 20);
+}
+
+@media screen and (max-width: 821px) {
+  .widgets {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 5px;
+    gap: 3px;
+  }
+  .charts {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10px;
+  }
+
+  .dashboard {
+    width: 100vw;
+  }
+
+  .swiper {
+    max-width: 95vw;
+  }
+
+  .dashboardContainer {
+    width: 100vw;
+  }
+  .tblContainer {
+    padding: 10px;
+    margin: 10px;
+  }
+}

@@ -1,0 +1,199 @@
+.cardRequest {
+  flex: 3;
+  /* border: 1px solid lightgray; */
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  background: white;
+  margin-bottom: 20px;
+  border: 1px solid rgb(214, 214, 214);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.crImg {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+}
+.cardImageClose {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.cardCloseDate {
+  display: flex;
+  flex-direction: column;
+}
+.crDesc {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 2;
+}
+
+.crTitle {
+  font-size: 20px;
+  color: #0071c2;
+}
+
+.crNumber {
+  font-size: 12px;
+  font-weight: bold;
+  width: 100px;
+  color: rgb(78, 78, 78);
+}
+.crDistance {
+  margin-left: 5px;
+  font-size: 12px;
+  background-color: #92c5e9;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  color: white;
+  width: max-content;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.crDistance:hover {
+  background-color: #01538d;
+  color: rgb(249, 249, 250);
+  cursor: pointer;
+}
+.crRequestby {
+  font-size: 12px;
+  background-color: #78e9b0;
+  color: white;
+  width: max-content;
+  max-width: 160px;
+  overflow: hidden;
+  padding: 3px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.crRemark {
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(78, 78, 78);
+}
+
+.crReqdate {
+  font-size: 12px;
+}
+
+.siCancelOp {
+  font-size: 12px;
+  color: #008009;
+  font-weight: bold;
+}
+
+.closeNote {
+  font-size: 12px;
+  color: #008009;
+}
+
+.progressNote {
+  font-size: 12px;
+  color: #a06f04;
+}
+
+.openNote {
+  font-size: 12px;
+  color: #c00606;
+}
+
+.crDetails {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.crReg {
+  display: flex;
+  align-items: "center";
+  gap: 5px;
+  color: rgb(78, 78, 78);
+}
+
+.crReg > span {
+  font-weight: 500;
+}
+.crReg > button {
+  background-color: #003580;
+  color: white;
+  padding: 5px;
+  font-weight: bold;
+  border: none;
+}
+
+.crButton {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.closeButton {
+  background-color: #00c21a;
+  width: 60px;
+  font-size: 10px;
+  color: white;
+  font-weight: bold;
+  padding: 10px 5px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.progressButton {
+  background-color: #d49114;
+  width: 60px;
+  font-size: 10px;
+  color: white;
+  font-weight: bold;
+  padding: 10px 5px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 466px) {
+  .cardRequest {
+    padding: 7px;
+    gap: 10px;
+  }
+  .crImg {
+    width: 130px;
+    height: 130px;
+  }
+
+  .crTitle {
+    font-size: 15px;
+  }
+
+  .crNumber {
+    font-size: 12px;
+  }
+
+  .crReg h3 {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .crImg {
+    width: 90px;
+    height: 90px;
+  }
+}

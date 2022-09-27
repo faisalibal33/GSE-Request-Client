@@ -1,0 +1,77 @@
+.dashboardNavbar {
+  height: 50px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  border-bottom: 1px solid rgb(214, 214, 214);
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #555;
+  position: sticky;
+  top: 0px;
+  background: white;
+  z-index: 100;
+  .dbwrapper {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .search {
+      display: flex;
+      align-items: center;
+      border: 0.5px solid lightgray;
+      padding: 3px;
+
+      input {
+        border: none;
+        outline: none;
+        background: transparent;
+
+        &::placeholder {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .dbitems {
+      display: flex;
+      align-items: center;
+
+      .dbitem {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+        position: relative;
+
+        .dbicon {
+          font-size: 20px;
+          cursor: pointer;
+        }
+
+        .dbavatar {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+        }
+
+        .dbcounter {
+          width: 15px;
+          height: 15px;
+          background-color: red;
+          border-radius: 50%;
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 10px;
+          font-weight: bold;
+          position: absolute;
+          top: -5px;
+          right: -5px;
+        }
+      }
+    }
+  }
+}

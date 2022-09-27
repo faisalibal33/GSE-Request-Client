@@ -1,0 +1,172 @@
+.header {
+  color: white;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  padding: 10px;
+}
+
+.backgroundHeader {
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  top: -70px;
+  min-width: 100%;
+  z-index: -1;
+  background-color: red;
+  background-image: url("https://mmc.tirto.id/image/2018/12/31/perawatan-pesawat-gmf-aero-asia-tirto-mico-1_ratio-16x9.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(7px);
+  -webkit-filter: blur(7px);
+  filter: brightness(30%) blur(2px);
+  height: 400px;
+  width: 100%;
+}
+
+.headerContainer {
+  width: 100%;
+  max-width: 1024px;
+  margin: 20px 0px 100px 0px;
+}
+
+.headerContainer.listMode {
+  margin: 20px 0px 0px 0px;
+}
+
+.headerList {
+  display: flex;
+  gap: 40px;
+  margin: 30px 0;
+}
+
+.headerListItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.active {
+  border: 2px solid rgb(214, 214, 214);
+  box-shadow: rgba(204, 204, 204, 0.19) 0px 10px 20px,
+    rgba(206, 206, 206, 0.23) 0px 6px 6px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.5s ease;
+}
+
+.request {
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.headerDesc {
+  margin: 20px 0px;
+}
+
+.headerBtn {
+  background-color: #0071c2;
+  color: white;
+  font-weight: 500;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.headerSearch {
+  height: 30px;
+  background-color: white;
+  border: 3px solid #febb02;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 0px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: -10px;
+  width: 100%;
+  max-width: 1024px;
+}
+
+.headerSearchBox {
+  position: sticky;
+  bottom: 0;
+}
+
+.headerIcon {
+  color: lightgray;
+}
+
+.headerSearchItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.headerSearchInput {
+  border: none;
+  outline: none;
+}
+
+.headerSearchText {
+  color: lightgray;
+  cursor: pointer;
+}
+
+.date {
+  position: absolute;
+  top: 50px;
+  z-index: 2;
+}
+
+.options {
+  z-index: 2;
+  position: absolute;
+  top: 50px;
+  background-color: white;
+  color: gray;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+.optionItem {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.optionCounter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: black;
+}
+
+.optionCounterButton {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #0071c2;
+  color: #0071c2;
+  cursor: pointer;
+  background-color: white;
+}
+
+.optionCounterButton:disabled {
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 710px) {
+  .headerMobile {
+    margin-top: 50px;
+    margin-bottom: 45px;
+  }
+  .navHeaderMobile {
+    display: none;
+  }
+}
